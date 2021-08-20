@@ -1,0 +1,54 @@
+<%- include('partials/_header'); -%>
+
+<div class="row mt-2" style="color: #dde1e7;">
+  <div class="col-md-6">
+    <div class="card-body">
+
+      <form action="/add" method="POST">
+        <div class="form-group">
+          <input type="text" name="username" placeholder="Name" class="form-control" autofocus required
+            style=" border-radius: 20px;">
+        </div>
+        <div class="form-group">
+          <input type="text" name="fathername" placeholder="Father Name" class="form-control"
+            style=" border-radius: 20px;" autofocus required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Email" class="form-control" style=" border-radius: 20px;"
+            autofocus required>
+        </div>
+        <div class="form-group">
+          <input type="number" name="phone" placeholder="Phone" class="form-control" style=" border-radius: 20px;"
+            autofocus required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="college" placeholder="College Name" class="form-control"
+            style=" border-radius: 20px;" autofocus required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="per_address" placeholder="Address" class="form-control" style=" border-radius: 20px;"
+            required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="password" placeholder="Password" class="form-control" style=" border-radius: 20px;"
+            required>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3" style="border-radius:30px ;">
+          Save User Details
+        </button>
+        <a href="/open" class="btn btn-info mt-3" style="border-radius:30px ; margin-left: 10px;">VIEW USERS</a>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <img src="/Images/db.png" width="700" height="500" />
+  </div>
+
+
+</div>
+
+
+
+<%- include('partials/_footer'); -%>
